@@ -293,6 +293,7 @@
 # open
 # open(file, mode='r', buffering=-1, encoding=None, 
 #       errors=None, newline=None, closefd=True, opener=None)
+# mode
 # 'r'  = open for reading (default) 
 # 'w'  = open for writing, truncating the file first 
 # 'x'  = open for exclusive creation, failing if the file already exists 
@@ -401,9 +402,65 @@
 #     i = i*p
 #     print(i)
 
-# hello from dev
+# # use.stripe 
+# x= "           which number do you have square           "
+# print(x.strip()) 
 
+# # using socket
+# import socket
+# path = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+# path.connect(('data.pr4e.org', 80))
+# cmd = 'GET http://data.pr4e.org/romeo.txt HTTP/1.0\r\n\r\n'.encode()
+# path.send(cmd)
+# while True:
+#     data = path.recv(512)
+#     if (len(data)<1):
+#         break
+#     print(data.decode())
+# path.close()
 
+# # Using uellib
+# import urllib.request, urllib.parse, urllib.error 
+# fhand = urllib.request.urlopen('http://data.pr4e.org/romeo.txt')
+# for line in fhand:
+#     print(line.decode().strip())
 
+# # Using requests
+# import requests
+# x = requests.get('https://w3schools.com/python/demopage.htm')
+# print(x.text)
 
+# # use xml
+# import xml.etree.ElementTree as ET 
+# data = '''<person>
+#     <name>Chuck</name>
+#     <phone type="intl">
+#        +1 734 303 4456
+#     </phone>
+#     <email hide="yes"/>
+# </person>'''
+# tree = ET.fromstring(data)
+# print('Name:', tree.find('name').text)
+# print('Attr:', tree.find('email').get('hide'))
 
+# # use json
+# import json
+# data = '''
+#   [
+#     { "id" : "001",
+#       "x" : "2",
+#      "name" : "Quincy"
+#     } ,
+#     { "id" : "009",
+#       "x" : "7",
+#       "name" : "Mrugesh"
+#     }
+#   ]
+# '''
+# info = json.loads(data)
+# # print(info[1]['name'])
+# print('user count: ', len(info))
+# for item in info:
+#     print('Name', item['name'])
+#     print('id', item['id'])
+#     print('attribute', item['x'])
