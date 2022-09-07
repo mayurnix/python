@@ -236,11 +236,13 @@
 
 # file = dict()
 # file = {'ramesh': 3, 'suresh': 2, 'mohit': 1}
+# file={'ramesh': 3, 'suresh': 2, 'mohit': 1}
 # print(list(file))
 # print(file.keys())
 # print(file.values())
 # print(file.items())
 
+# for key in result
 # counts = {'ramesh': 3, 'suresh': 20, 'mohit': 389}
 # for key in counts:
 #     if counts[key] > 10:
@@ -464,3 +466,80 @@
 #     print('Name', item['name'])
 #     print('id', item['id'])
 #     print('attribute', item['x'])
+
+# counts = dict()
+# names = {'ramesh': 3, 'suresh': 20, 'mohit': 389}
+# total=0
+# for key in names : 
+#     total += names[key]
+# print(total) 
+
+# fromuser = input("Enter student name : ")
+# file = dict()
+# file = {"ramesh":{'physics':95,'science':72,'maths':98},
+# "suresh":{'physics':87,'science':65,'maths':35},
+# "mahesh":{'physics':65,'science':79,'maths':85}}
+# total=0
+# if fromuser=="ramesh":
+#     A = file["ramesh"]
+#     print(A)
+#     for key1 in A : 
+#         total += A[key1]
+#     print(total)
+# elif fromuser=="suresh":
+#     B = file["suresh"]
+#     print(B)
+#     for key2 in B : 
+#         total += B[key2]
+#     print(total)
+# elif fromuser=="mahesh":
+#     C = file["mahesh"]
+#     print(C)
+#     for key3 in C : 
+#         total += C[key3]
+#     print(total)
+# else :
+#     print("This Name is not in the file")
+   
+#    fromuser = input("Enter student name : ")
+# file = {"ramesh":{'physics':95,'science':72,'maths':98},
+# "suresh":{'physics':87,'science':65,'maths':35},
+# "mahesh":{'physics':65,'science':79,'maths':85}}
+# if fromuser=="ramesh" :
+#     S = file.get('ramesh')
+#     print(S)
+#     print(sum(S.values()))
+# elif fromuser=="suresh" :
+#     print(S)
+#     S = file.get('suresh')
+#     print(sum(S.values()))
+# elif fromuser=="mahesh" :
+#     print(S)
+#     S = file.get('mahesh')
+#     print(sum(S.values()))
+# else :
+#     print("This Name is not in the file")
+
+# fromuser = input("Enter student name : ")
+# file = {"ramesh":{'physics':95,'science':72,'maths':98},
+# "suresh":{'physics':87,'science':65,'maths':35},
+# "mahesh":{'physics':65,'science':79,'maths':85}}
+# if fromuser=="ramesh":
+#     print(sum(file["ramesh"].values()))
+# elif fromuser=="suresh":
+#     print(sum(file["suresh"].values()))
+# elif fromuser=="mahesh":
+#     print(sum(file["mahesh"].values()))
+# else :
+#     print("This Name is not in the file")
+
+# fromuser = input("Enter student name : ")
+# file = {"ramesh":{'physics':95,'science':72,'maths':98},
+# "suresh":{'physics':87,'science':65,'maths':35},
+# "mahesh":{'physics':65,'science':79,'maths':85}}
+# for k, v in file.items() :
+#     if k==fromuser :
+#         print(sum(file[k].values()))
+#     else :
+#         print("This Name is not in the file")
+#         break
