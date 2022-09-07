@@ -473,7 +473,7 @@
 # for key in names : 
 #     total += names[key]
 # print(total) 
-
+1..........
 # fromuser = input("Enter student name : ")
 # file = dict()
 # file = {"ramesh":{'physics':95,'science':72,'maths':98},
@@ -500,7 +500,7 @@
 #     print(total)
 # else :
 #     print("This Name is not in the file")
-   
+2......
 #    fromuser = input("Enter student name : ")
 # file = {"ramesh":{'physics':95,'science':72,'maths':98},
 # "suresh":{'physics':87,'science':65,'maths':35},
@@ -519,7 +519,7 @@
 #     print(sum(S.values()))
 # else :
 #     print("This Name is not in the file")
-
+3.......
 # fromuser = input("Enter student name : ")
 # file = {"ramesh":{'physics':95,'science':72,'maths':98},
 # "suresh":{'physics':87,'science':65,'maths':35},
@@ -532,7 +532,7 @@
 #     print(sum(file["mahesh"].values()))
 # else :
 #     print("This Name is not in the file")
-
+4.....
 # fromuser = input("Enter student name : ")
 # file = {"ramesh":{'physics':95,'science':72,'maths':98},
 # "suresh":{'physics':87,'science':65,'maths':35},
