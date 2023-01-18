@@ -3,8 +3,8 @@
 # print(x)
 # x = 3 / 0
 
-# # print(x)
-# # print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)
+# print(x)
+# print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)
 # print('Welcome to Python!')
 # print('Welcome', 'to', 'Python!')
 # print("hello, \"friend\"")
@@ -186,7 +186,7 @@
 #             print (c)
 #             if c > 5000 :
 #                 break
-# fibonachi = fibo(int(input(("enter a turms of fibo series "))))
+# Fibonacci = fibo(int(input(("enter a turms of fibo series "))))
 
 # friends = ['mitesh', 'yash', 'brijesh', 'jayesh', 'aadit']
 # print (len(friends))
@@ -473,7 +473,7 @@
 # for key in names : 
 #     total += names[key]
 # print(total) 
-1..........
+# 1..........
 # fromuser = input("Enter student name : ")
 # file = dict()
 # file = {"ramesh":{'physics':95,'science':72,'maths':98},
@@ -500,7 +500,7 @@
 #     print(total)
 # else :
 #     print("This Name is not in the file")
-2......
+# 2......
 #    fromuser = input("Enter student name : ")
 # file = {"ramesh":{'physics':95,'science':72,'maths':98},
 # "suresh":{'physics':87,'science':65,'maths':35},
@@ -519,7 +519,7 @@
 #     print(sum(S.values()))
 # else :
 #     print("This Name is not in the file")
-3.......
+# 3.......
 # fromuser = input("Enter student name : ")
 # file = {"ramesh":{'physics':95,'science':72,'maths':98},
 # "suresh":{'physics':87,'science':65,'maths':35},
@@ -532,7 +532,7 @@
 #     print(sum(file["mahesh"].values()))
 # else :
 #     print("This Name is not in the file")
-4.....
+# 4.....
 # fromuser = input("Enter student name : ")
 # file = {"ramesh":{'physics':95,'science':72,'maths':98},
 # "suresh":{'physics':87,'science':65,'maths':35},
@@ -540,7 +540,349 @@
 # for k, v in file.items() :
 #     if k==fromuser :
 #         print(sum(file[k].values()))
-#     else :
-#         print("This Name is not in the file")
-#         break
 
+
+# file = {"ramesh":{'physics':95,'science':72,'maths':98},
+# "suresh":{'physics':87,'science':65,'maths':35},
+# "mahesh":{'physics':65,'science':79,'maths':85}}
+# file1 = []
+# for k, v in file.items() :
+#     total=sum(file[k].values())
+#     file1.append(total)
+# K=file.keys()
+# V=file1
+# print("File of student name with total marks")
+# file3=dict(zip(K,V))
+# print(file3)
+# # print(file.items())
+# # output:dict_items([('ramesh', {'physics': 95, 'science': 72, 'maths': 98}),
+# #  ('suresh', {'physics': 87, 'science': 65, 'maths': 35}), 
+# #  ('mahesh', {'physics': 65, 'science': 79, 'maths': 85})])
+
+# # create a simple list using append
+# list1=[]
+# list1.append(15)
+# list1.append(25)
+# print(list1)
+# # create a simple list using extend
+# List2 = [25,89,45,"python",15]
+# list1.extend(List2)
+# print(list1)
+# # create a integer list using for loop
+# list3=[]
+# for i in range(0,10) :
+#     list3.append(i)
+# print(list3)
+
+# # create a simple list using for-loop
+# list=[]
+# for i in range(0,6) :
+#     list.append(i)
+# print("list:",list)
+# # create a nested list
+# list1=['A','B','C']
+# list3=[list,list1]
+# print("nested list:",list3)
+# # creat a empty list
+# list.clear()
+# print("empty list:",list)
+# # output:list: [0, 1, 2, 3, 4, 5]
+# # nested list: [[0, 1, 2, 3, 4, 5], ['A', 'B', 'C']]
+# # empty list: []
+
+# # swap Element in list 
+# list = [5,8,6,9,8]
+# print("before swap :", list)
+# b = int(input("enter list index No.1 : "))
+# c = int(input("enter list index No.2 : "))
+# a = list[b]
+# list[b]=list[c]
+# list[c]= a
+# print("after swap :", list)
+# # output: before swap : [5, 8, 6, 9, 8]
+# # enter index No.1 : 1
+# # enter index No.2 : 2
+# # after swap : [5, 6, 8, 9, 8]
+    
+# # Find a largest number in list
+# list = [1,5,6,9,15,65,2,9,45,85,152,22,7,10,3]
+# max = None
+# for x in list:
+#     if max is None or x > max :
+#         max=x
+# print('maximum Number is',max)
+# # output: maximum Number is 152
+
+# list = [1,2,3,4,'mango',25,15,'banana',49,17]
+# print(list)
+# # remove element in list
+# list.remove('mango')
+# print(list)
+# #insert element in list
+# list.insert(2,'orange')
+# print(list)
+# # update element in list 
+# list.remove(25)
+# list.insert(5,24)
+# print(list)
+# # output=[1, 2, 3, 4, 'mango', 25, 15, 'banana', 49, 17]
+# # [1, 2, 3, 4, 25, 15, 'banana', 49, 17]
+# # [1, 2, 'orange', 3, 4, 25, 15, 'banana', 49, 17]
+# # [1, 2, 'orange', 3, 4, 24, 15, 'banana', 49, 17]
+
+# creat a dictionary
+# list1=[1,2,3,4,5]
+# list2=['apple','orange','mango','banana',]
+# A = dict(zip(list1,list2))
+# print('your dictionary is',A)
+# output: your dictionary is 
+# {1: 'apple', 2: 'orange', 3: 'mango', 4: 'banana'}
+
+# word="jfeicie2ef626r"
+# a = len(word)
+# # b=0
+# for i in range(-1,-a-1,-1): # range(-1,-a-1,-1) = range(a-1,-1,-1)
+#     # b = b-1
+#     print(word[i],end="")
+
+
+# for i in range(5):
+#     a=2
+#     for j in range(5,i,-1):
+#         print(a,end=" ")
+#         a+=2
+#     print()  
+
+# for i in range(12,0,-2):
+#     for j in range(2,i,2):
+#         print(j,end=" ")
+#     print()
+
+# for i in range (1,7):
+#     print(i*"* ")
+#     print()
+# for i in range (5,0,-1):
+#     print(i*"* ")
+#     print()
+
+# for i in range (1,12):
+#     if i<7:
+#         print(i*" *")
+#     else :
+#         a = 12-i
+#         print(a*" *")
+
+# 2. Write a python program to print any alphabet.
+# for i in range(1,6):
+#     print("M",end="")
+#     for j in range(1,10):
+#         if i==j:
+#             print("M",end="")
+#         elif (i+(j-4))==6 and i<5:
+#             print("M",end="")
+#         else :
+#             print(" ",end="")
+#     print("M",end="")
+#     print()
+# _________________________________________
+# n = int(input("enter value of i ="))
+# for i in range(1,n+1):
+#     for j in range(1,2*n):
+#         if (i+j)==(n+1) and i<n:
+#             print("M",end="")
+#         elif i==(j-n+1) and i<n:
+#             print("M",end="")
+#         elif i<n:
+#             print(" ",end="")
+#     if i==n:
+#         print(n*"M_")
+#     print()
+# ________________________________
+# a=1
+# for i in range(1,6):
+#     for j in range(1,6):
+#         if (i+j)<6 and i<5:
+#             print(" ",end="")
+#         if (i+j)==6 and i<5:
+#             print("M",end="")
+#         if (i+j)==7 and i<5:
+#             print(a*" ",end="")
+#             a+=2
+#             print("M",end="")
+#     if i==5:
+#         print(5*"M ")
+#     print()
+
+# for i in range(10):
+#     for j in range(10):
+#         if i in [0,9]:
+#             print("Z",end="")
+#         elif j in [0,9]:
+#             print("Z",end="")
+#         else:
+#             print(" ",end="")
+#             # print(end=" ")
+#     print()
+
+# n = int(input("enter value of i ="))
+# for i in range(1,n+1):
+#     for j in range(1,2*n):
+#         if (i+j)==(n+1) and i<n:
+#             print("#",end="")
+#         elif i==(j-n+1) and i<n:
+#             print("#",end="")
+#         elif i<n:
+#             print(" ",end="")
+#     if i==n:
+#         print(n*"# ")
+#     print()
+
+
+# import matplotlib.pyplot as plt
+  
+# # x axis values
+# x = [1,2,3,4,5,6]
+# # corresponding y axis values
+# y = [2,4,1,5,2,6]
+  
+# # plotting the points 
+# plt.plot(x, y, color='green', linestyle='dashed', linewidth = 3, marker='o', markerfacecolor='blue', markersize=12)
+  
+# # setting x and y axis range
+# plt.ylim(1,8)
+# plt.xlim(1,8)
+  
+# # naming the x axis
+# plt.xlabel('x - axis')
+# # naming the y axis
+# plt.ylabel('y - axis')
+  
+# # giving a title to my graph
+# plt.title('Some cool customizations!')
+  
+# # function to show the plot
+# plt.show() 
+
+
+# # find a roots in given interval using False bisection method with plot
+# import matplotlib.pyplot as plt
+# a=float(input ("a="))
+# b=float(input ("b="))
+# if a>b:
+#    m=a
+#    a=b
+#    b=m
+# root=[]
+# def f(x):
+#     return (x*x)-(5*x)+6
+#     # return (x*x)+(5*x)-6
+# if (f(a)*f(b))<=0:
+#     while True:
+#         if abs(a-b)<0.0001:
+#             break
+#         else:
+#             c=(a+b)/2
+#             if (f(c)*f(b))<0:
+#                 a=c
+#             else:
+#                 b=c
+#         root.append(c)
+# else:
+#     print("entre valid inreval")
+# print(root)
+# plt.plot(root)
+# plt.show()
+
+
+# # find a roots in given interval using False Position Method (or) Regula Falsi Method with plot
+# import numpy as np
+# import matplotlib.pyplot as plt
+# a=float(input ("a="))
+# b=float(input ("b="))
+# if a>b:
+#    m=a
+#    a=b
+#    b=m
+# root=[]
+# def f(x):
+#      return x*x-5*x+6
+# if (f(a)*f(b))<=0:
+#     while True:
+#         c=(a*f(b)-b*f(a))/(f(b)-f(a))
+#         root.append(c)
+#         print("c=",c)
+#         if (b-c)<0.00000001:
+#             break
+#         b=c
+# else:
+#     print("entre valid inreval")
+# print(root)
+# plt.plot(root)
+# # b = np.arange(0,10,0.005)
+# # y = b*b-5*b+6
+# # plt.plot(b,y)
+# plt.show()
+
+
+
+
+
+# D = {}
+# n = int(input("Enter a number of student you have: "))
+# while len(D) < n :
+#     name = input("Enter name: ")
+#     grad = float(input("Enter his grad: "))
+#     D[name] = grad
+# # print("1",D)
+# a = sorted(D.items(),key = lambda x : x[1])
+# # print("2",a)
+# list = [a[0][0],a[1][0]]
+# b = sorted(list)
+# # print("3",b)
+# print(b[0])
+# print(b[1])
+
+# print(dict(map(lambda x: (x[0], x[1]+5), D.items() ))) # changise in values
+# g = list(D.values()) # use to print values
+# s = list(D.keys()) # use to print keys
+# print(s)
+
+# D = {}
+# n = int(input())
+# while len(D) < n :
+#     name = input()
+#     grad = float(input())
+#     D[name] = grad
+# # print("1",D)
+# a = sorted(D.items(),key = lambda x : x[1])
+# # print("2",a)
+# list = [a[0][0],a[1][0]]
+# b = sorted(list)
+# # print("3",b)
+# print(b[0])
+# print(b[1])
+
+
+
+# L1=[]
+# for i in range (5):
+#     L2=[]
+#     for j in range (3):
+#         L2.append(input("="))
+#     L1.append(L2)
+# print(L1)
+
+
+
+# marksheet=[]
+# marks=[]
+# x=int(input())
+# for i in range(x): 
+#     name=input()
+#     grade=float(input())
+#     marksheet+=[[name,grade]] 
+#     marks+=[grade]
+# sl=(sorted(set(marks))) [1] 
+# for i,j in sorted (marksheet):
+#     if j==sl: 
+#        print(i)
