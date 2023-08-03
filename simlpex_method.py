@@ -3,7 +3,7 @@
 import numpy as np
 import pandas as pd
 # input_data
-a = input("enter your problem is maximiz(for enter max) or minimiz(for enter min): ")
+a = input("enter your problem is maximize(for enter max) or minimize(for enter min): ")
 b = int(input("how much constraints you have :"))  # No. of constraints
 print("enter the coefficients of objective function(Z) separate by coma")
 str1 = input("= ")
